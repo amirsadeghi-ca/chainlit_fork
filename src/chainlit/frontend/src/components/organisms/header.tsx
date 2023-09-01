@@ -73,14 +73,14 @@ function Nav({ hasDb, hasReadme }: NavProps) {
 
   const matches = useMediaQuery(theme.breakpoints.down('md'));
 
-  const tabs = [{ to: '/', label: 'Chat' }];
+  const tabs = [{ to: '/', label: 'چت' }];
 
   if (hasDb) {
-    tabs.push({ to: '/dataset', label: 'History' });
+    tabs.push({ to: '/dataset', label: 'تاریخچه' });
   }
 
   if (hasReadme) {
-    tabs.push({ to: '/readme', label: 'Readme' });
+    tabs.push({ to: '/readme', label: 'درباره چجوری برم' });
   }
 
   const nav = (
@@ -169,7 +169,7 @@ export default function Header() {
           <NewChatButton />
           <Box ml={1} />
           <GithubButton href={pSettings?.ui?.github} />
-          <UserButton />
+          {/* <UserButton /> */}
         </Stack>
       </Toolbar>
     </AppBar>
