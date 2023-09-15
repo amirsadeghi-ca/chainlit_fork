@@ -35,9 +35,9 @@ export default function SettingsModal() {
       <DialogContent>
         <List
           sx={{ width: '100%', maxWidth: 360 }}
-          subheader={<ListSubheader>Settings</ListSubheader>}
+          subheader={<ListSubheader>تنظیمات</ListSubheader>}
         >
-          <ListItem sx={{ display: 'flex', gap: 2 }}>
+          {/* <ListItem sx={{ display: 'flex', gap: 2 }}>
             <ListItemIcon>
               <ExpandIcon />
             </ListItemIcon>
@@ -54,8 +54,8 @@ export default function SettingsModal() {
                 }}
               />
             </Box>
-          </ListItem>
-          <ListItem sx={{ display: 'flex', gap: 2 }}>
+          </ListItem> */}
+          {/* <ListItem sx={{ display: 'flex', gap: 2 }}>
             <ListItemIcon>
               <EmojiObjectsIcon />
             </ListItemIcon>
@@ -72,12 +72,12 @@ export default function SettingsModal() {
                 }}
               />
             </Box>
-          </ListItem>
+          </ListItem> */}
           <ListItem sx={{ display: 'flex', gap: 2 }}>
             <ListItemIcon>
               <DarkModeOutlined />
             </ListItemIcon>
-            <ListItemText id="switch-theme" primary="Dark mode" />
+            <ListItemText id="switch-theme" primary="حالت تاریک" />
             <Box>
               <SwitchInput
                 id="switch-theme"

@@ -91,7 +91,7 @@ export default function HistoryButton({ onClick }: Props) {
         color="text.primary"
         sx={{ fontSize: '14px', fontWeight: 700 }}
       >
-        Last messages
+        آخرین پیام ها
       </Typography>
       <IconButton
         onClick={() => setChatHistory((old) => ({ ...old, messages: [] }))}
@@ -114,7 +114,7 @@ export default function HistoryButton({ onClick }: Props) {
             textTransform: 'uppercase'
           }}
         >
-          Such empty...
+          پیامی یافت نشد
         </Typography>
       </div>
     ) : null;

@@ -12,6 +12,7 @@ export const Logo = ({ style }: Props) => {
   const { theme } = useRecoilValue(settingsState);
 
   return (
-    <img src={`${httpEndpoint}/logo?theme=${theme}`} alt="logo" style={style} />
+    <p>Chejooriberam.com</p>
+    // <img src={`${httpEndpoint}/logo?theme=${theme}`} alt="logo" style={style} />
   );
 };

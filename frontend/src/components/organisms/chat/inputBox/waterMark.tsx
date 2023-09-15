@@ -12,7 +12,7 @@ export default function WaterMark() {
   const src = theme === 'light' ? LogoLight : LogoDark;
   return (
     <Stack mx="auto">
-      <a
+      {/* <a
         href="https://github.com/Chainlit/chainlit"
         target="_blank"
         style={{
@@ -20,16 +20,16 @@ export default function WaterMark() {
           alignItems: 'center',
           textDecoration: 'none'
         }}
-      >
+      > */}
         <Typography fontSize="12px" color="text.secondary">
-          Built with
+          چجوری برم
         </Typography>
-        <img
+        {/* <img
           src={src}
           alt="watermark"
           style={{ width: 65, filter: 'grayscale(1)', marginLeft: '4px' }}
         />
-      </a>
+      </a> */}
     </Stack>
   );
 }

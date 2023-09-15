@@ -45,7 +45,7 @@ export default function UserMenu({ anchorEl, open, handleClose }: Props) {
 
   const settingsItem = (
     <MenuItem
-      key="settings"
+      key="تنظیمات"
       onClick={() => {
         setAppSettings((old) => ({ ...old, open: true }));
         handleClose();
@@ -54,10 +54,7 @@ export default function UserMenu({ anchorEl, open, handleClose }: Props) {
       <ListItemIcon>
         <SettingsIcon fontSize="small" />
       </ListItemIcon>
-      <ListItemText>Settings</ListItemText>
-      <Typography variant="body2" color="text.secondary">
-        S
-      </Typography>
+      <ListItemText>تنظیمات</ListItemText>
     </MenuItem>
   );
 
@@ -82,7 +79,7 @@ export default function UserMenu({ anchorEl, open, handleClose }: Props) {
       <ListItemIcon>
         <LogoutIcon fontSize="small" />
       </ListItemIcon>
-      Logout
+      خروج
     </MenuItem>
   );
 

@@ -42,7 +42,7 @@ export default function NewChatButton() {
         onClick={handleClickOpen}
         startIcon={<AddIcon />}
       >
-        New Chat
+        چت جدید
       </AccentButton>
       <Dialog
         open={open}
@@ -55,22 +55,22 @@ export default function NewChatButton() {
         }}
       >
         <DialogTitle id="alert-dialog-title">
-          {'Create a new chat?'}
+          {'میخواهید یک چت جدید ایجاد کنید؟'}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            This will clear the current messages and start a new chat.
+          با این کار پیام های فعلی پاک می شوند و یک چت جدید شروع می شود.
           </DialogContentText>
         </DialogContent>
         <DialogActions sx={{ p: 2 }}>
-          <RegularButton onClick={handleClose}>Cancel</RegularButton>
+          <RegularButton onClick={handleClose}>لغو</RegularButton>
           <AccentButton
             id="confirm"
             variant="outlined"
             onClick={handleConfirm}
             autoFocus
           >
-            Confirm
+            تایید
           </AccentButton>
         </DialogActions>
       </Dialog>

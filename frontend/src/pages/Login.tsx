@@ -75,7 +75,7 @@ export default function Login() {
 
   return (
     <AuthLogin
-      title="Login to access the app."
+      title="برای دسترسی به اپلیکیشن وارد شوید."
       error={error}
       callbackUrl="/"
       providers={config?.oauthProviders || []}
